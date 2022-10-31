@@ -171,6 +171,7 @@ def main():
                 rel_emb = rel_emb.cuda(dev_id)
                 rel_emb.stop_gradient = False
             if all_ents_emb is not None:
+                
                 all_ents_emb = all_ents_emb.cuda(dev_id)
                 all_ents_emb.stop_gradient = False
             timer['sample'] += (time.time() - ts)
